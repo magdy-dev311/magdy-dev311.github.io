@@ -37,6 +37,16 @@ body {
     width: 100%;
 }
 
+.navbar-brand {
+    width: 200px;
+}
+
+@media (max-width:768px) {
+    .navbar-brand {
+        width: 150px;
+    }
+}
+
 @media(min-width:992px) {
     .Custom-Border {
         border: none !important;
