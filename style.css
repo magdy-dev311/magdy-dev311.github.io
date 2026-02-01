@@ -1,11 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+::-webkit-scrollbar {
+    width: 7px;
+    z-index: -1
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 0 1px #ddd inset;
+    backdrop-filter: blur(10px) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(13, 110, 253, 60%);
+    border-radius: 30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(13, 110, 253);
+}
+
 body {
     font-family: "Inter", sans-serif !important;
-    color: #F6F6F8;
+    background-color: #F6F6F8;
     height: 500vh;
     transition: 1s;
 }
+
+body.dark::-webkit-scrollbar-track {
+    background-color: rgba(15, 23, 42, 0.6) !important;
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.1) !important;
+}
+
 
 body.dark {
     background-color: #0F172A !important;
@@ -15,6 +42,7 @@ body.dark nav {
     background-color: #0F172A !important;
     color: #F6F6F8 !important;
     transition: .5s;
+    z-index: 10;
 }
 
 body.dark nav.nav-scroll {
@@ -40,23 +68,20 @@ body.dark .nav-link:hover {
 }
 
 body.dark .bi-sun-fill {
-    color: gold;
+    color: gold !important;
     transition: 1s;
 }
 
 .nav-links-custom {
     font-size: 18px !important;
-    font-weight: 500 !important;
     line-height: 1.25rem !important;
     transition: 0.3s ease-in-out;
-
+    font-weight: 500 !important;
 }
 
 .nav-links-custom:hover {
     color: #135bec !important;
 }
-
-/* #Toggle-menu-custom {} */
 
 #Toggle-menu-custom:focus {
     box-shadow: 0 0 0 0 !important;
@@ -64,8 +89,12 @@ body.dark .bi-sun-fill {
 }
 
 .bi-moon-fill {
-    color: #2a3d69;
-    transition: 1s;
+    color: #2a3d69 !important;
+    transition: .3s;
+}
+
+.bi-moon-fill:hover {
+    color: #0d6efd !important;
 }
 
 #Toggle-menu-custom:focus .navbar-toggler-icon {
@@ -82,11 +111,6 @@ body.dark .bi-sun-fill {
 
 .navbar-brand {
     width: 200px;
-}
-
-.cv-btn {
-    background-color: #2696E9 !important;
-    color: white;
 }
 
 @media(max-width:576px) {

@@ -1,6 +1,15 @@
 let themeBtns = document.querySelectorAll(".theme-btn");
 let themeBtnsIcons = document.querySelectorAll(".theme-btn i");
-console.log(themeBtnsIcons);
+
+if (window.localStorage.getItem("theme")) {
+  if (window.localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    themeBtnsIcons.forEach((icon) => {
+      icon.classList.remove("bi-moon-fill");
+      icon.classList.add("bi-sun-fill");
+    });
+  }
+}
 
 themeBtns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
@@ -9,9 +18,11 @@ themeBtns.forEach((btn) => {
       if (icon.classList.contains("bi-moon-fill")) {
         icon.classList.remove("bi-moon-fill");
         icon.classList.add("bi-sun-fill");
+        window.localStorage.setItem("theme", "dark");
       } else {
         icon.classList.remove("bi-sun-fill");
         icon.classList.add("bi-moon-fill");
+        window.localStorage.setItem("theme", "light");
       }
     });
   });
