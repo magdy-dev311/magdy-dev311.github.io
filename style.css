@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif !important;
+    color: #F6F6F8;
+    height: 500vh;
+}
+
+.nav-links-custom {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 1.25rem !important;
+    transition: 0.3s ease-in-out;
+
+}
+
+.nav-links-custom:hover {
+    color: #135bec !important;
+}
+
+/* #Toggle-menu-custom {} */
+
+#Toggle-menu-custom:focus {
+    box-shadow: 0 0 0 0 !important;
+    color: #2897EA !important;
+}
+
+#Toggle-menu-custom:focus .navbar-toggler-icon {
+    color: #2897EA !important;
+}
+
+.nav-custom {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media(min-width:992px) {
+    .Custom-Border {
+        border: none !important;
+    }
+}
