@@ -18,12 +18,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- bootstrao icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary px-md-5 nav-custom shadow-sm">
+    <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary px-md-5 nav-custom shadow-lg">
         <div class="container-fluid px-md-5">
             <a class="navbar-brand" href="#"><img loading="lazy" src="Images/Logo.webp" class="img-fluid"
                     alt="Logo"></a>
@@ -31,13 +32,15 @@
                 <button id="Toggle-menu-custom" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars fs-3"></i>
+                    <i class="bi bi-list fs-2 fw-bold"></i>
                 </button>
-                <button class="border-start ps-3 d-lg-none border-0 bg-transparent"><i
-                        class="fa-regular fa-moon fs-3 "></i></button>
+                <button class="theme-btn border-start ps-3 d-lg-none border-0 bg-transparent">
+                    <i class="bi bi-moon-fill fs-3"></i>
+                </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="Custom-Border navbar-nav ms-auto gap-3 pt-3 border-top pt-lg-0 align-items-lg-center">
+                <ul
+                    class="Custom-Border navbar-nav ms-auto gap-3 pt-3 border-top pt-lg-0 align-items-lg-center fs-6 fs-md-6">
                     <li class="nav-item">
                         <a class="nav-link nav-links-custom  active" aria-current="page" href="#home">Home</a>
                     </li>
@@ -51,25 +54,25 @@
                         <a class="nav-link nav-links-custom " href="#contact">Contact</a>
                     </li>
                     <li class="nav-item d-none d-lg-block">
-                        <button class="btn"><i class="fa-regular fa-moon fs-3"></i></button>
+                        <button class=" theme-btn border-0 bg-transparent d-none d-lg-block"><i
+                                class="bi bi-moon-fill fs-3"></i></button>
                     </li>
 
                     <li class="nav-item d-none d-lg-block border-start ps-4">
-                        <a class="btn btn-primary " download
+                        <a class="cv-btn btn  " download
                             href="https://drive.google.com/uc?id=1XBVo0lTiLUUpclqQdpm_ZjtP5mKntrl2&export=download">Download
                             CV</a>
                     </li>
-
                 </ul>
-
-
 
             </div>
 
         </div>
     </nav>
 
+
     <!-- boot strap link (JS) -->
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

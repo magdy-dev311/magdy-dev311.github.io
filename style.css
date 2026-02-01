@@ -4,6 +4,44 @@ body {
     font-family: "Inter", sans-serif !important;
     color: #F6F6F8;
     height: 500vh;
+    transition: 1s;
+}
+
+body.dark {
+    background-color: #0F172A !important;
+}
+
+body.dark nav {
+    background-color: #0F172A !important;
+    color: #F6F6F8 !important;
+    transition: .5s;
+}
+
+body.dark nav.nav-scroll {
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+nav.nav-scroll {
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+body.dark .nav-link {
+    color: #ccc !important;
+}
+
+body.dark .nav-link.active {
+    color: #F6F6F8 !important;
+}
+
+body.dark .nav-link:hover {
+    color: #2696E9 !important;
+}
+
+body.dark .bi-sun-fill {
+    color: gold;
+    transition: 1s;
 }
 
 .nav-links-custom {
@@ -25,6 +63,11 @@ body {
     color: #2897EA !important;
 }
 
+.bi-moon-fill {
+    color: #2a3d69;
+    transition: 1s;
+}
+
 #Toggle-menu-custom:focus .navbar-toggler-icon {
     color: #2897EA !important;
 }
@@ -39,6 +82,17 @@ body {
 
 .navbar-brand {
     width: 200px;
+}
+
+.cv-btn {
+    background-color: #2696E9 !important;
+    color: white;
+}
+
+@media(max-width:576px) {
+    .nav-links-custom {
+        font-size: 15px !important;
+    }
 }
 
 @media (max-width:768px) {
