@@ -255,12 +255,12 @@ body.dark .text h2 {
 
     .icon-page-1 {
         left: 25px;
-        top: -15px;
+        top: -10px;
     }
 
     .icon-page-2 {
         right: 25px;
-        bottom: 16px;
+        bottom: -20px;
     }
 
     .img-child img {
