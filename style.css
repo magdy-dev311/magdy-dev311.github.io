@@ -236,6 +236,11 @@ body.dark .text h2 {
         font-size: 25px;
     }
 
+    .img-parent,
+    .img-child {
+        width: 230px;
+        height: 230px;
+    }
 }
 
 @media (max-width:768px) {
@@ -256,12 +261,6 @@ body.dark .text h2 {
     .icon-page-2 {
         right: 25px;
         bottom: 16px;
-    }
-
-    .img-parent,
-    .img-child {
-        width: 230px;
-        height: 230px;
     }
 
     .img-child img {
