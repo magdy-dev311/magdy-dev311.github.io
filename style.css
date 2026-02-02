@@ -217,9 +217,18 @@ body.dark .bi-sun-fill {
 
     .icon-page-2 {
         right: 25px;
-        bottom: 6px;
+        bottom: 16px;
     }
 
+    .img-parent,
+    .img-child {
+        width: 230px;
+        height: 230px;
+    }
+
+    .img-child img {
+        top: -50px;
+    }
 }
 
 @media(min-width:992px) {
