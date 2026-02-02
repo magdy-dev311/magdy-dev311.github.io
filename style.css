@@ -38,6 +38,10 @@ body.dark {
     background-color: #0F172A !important;
 }
 
+body.dark i.bi-list {
+    color: #0d6efd !important
+}
+
 body.dark nav {
     background-color: #0F172A !important;
     color: #F6F6F8 !important;
@@ -107,22 +111,115 @@ body.dark .bi-sun-fill {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .navbar-brand {
     width: 200px;
 }
 
+#home {
+    margin-top: 5rem;
+    position: relative;
+    height: 86.2vh;
+}
+
+.icon-page-1 {
+    position: absolute;
+    left: 70px;
+    top: 20px;
+    font-size: 70px;
+    transform: rotate(-30deg);
+    color: rgba(13, 109, 253, 0.265);
+    z-index: -1;
+}
+
+
+
+.icon-page-2 {
+    position: absolute;
+    right: 70px;
+    bottom: 30px;
+    font-size: 70px;
+    transform: rotate(20deg);
+    color: rgba(13, 109, 253, 0.265);
+    z-index: -1;
+}
+
+
+.img-parent {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #2896eabf;
+    box-shadow: 3px 3px 10px 1px #2896eabf,
+        -3px -3px 10px 1px #2896eabf;
+    margin: 100px auto 0;
+    color: rgba(0, 180, 2180, 0.06);
+}
+
+.img-child {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    animation: top-down-jumbing 5s infinite ease-in-out;
+    border: 4px solid #F6F6F8;
+}
+
+.img-child img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -70px;
+}
+
+@keyframes top-down-jumbing {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -15px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
 @media(max-width:576px) {
     .nav-links-custom {
         font-size: 15px !important;
     }
+
+
 }
 
 @media (max-width:768px) {
     .navbar-brand {
         width: 150px;
     }
+
+    .icon-page-1,
+    .icon-page-2 {
+        font-size: 35px;
+    }
+
+    .icon-page-1 {
+        left: 25px;
+        top: -15px;
+    }
+
+    .icon-page-2 {
+        right: 25px;
+        bottom: 6px;
+    }
+
 }
 
 @media(min-width:992px) {
