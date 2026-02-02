@@ -50,7 +50,7 @@ body.dark i.bi-list {
 body.dark nav {
     background-color: #0F172A !important;
     color: #F6F6F8 !important;
-    transition: .5s;
+
     z-index: 10;
 }
 
@@ -79,6 +79,11 @@ body.dark .nav-link:hover {
 body.dark .bi-sun-fill {
     color: gold !important;
     transition: 1s;
+}
+
+body.dark .text h1,
+body.dark .text h2 {
+    color: white;
 }
 
 .nav-links-custom {
@@ -117,6 +122,7 @@ body.dark .bi-sun-fill {
     left: 0;
     width: 100%;
     z-index: 1000;
+    transition: 1s;
 }
 
 .navbar-brand {
@@ -195,6 +201,11 @@ body.dark .bi-sun-fill {
     font-weight: 500;
     color: #111827;
     font-family: "SN Pro", sans-serif;
+}
+
+.text h1,
+.text h2 {
+    transition: 1s;
 }
 
 @keyframes top-down-jumbing {
