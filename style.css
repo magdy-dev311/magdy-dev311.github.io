@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
 
 ::-webkit-scrollbar {
     width: 7px;
@@ -22,7 +27,7 @@
 }
 
 body {
-    font-family: "Inter", sans-serif !important;
+    font-family: "SN Pro", sans-serif !important;
     background-color: #F6F6F8;
     height: 500vh;
     transition: 1s;
@@ -155,7 +160,7 @@ body.dark .bi-sun-fill {
     background-color: #2896eabf;
     box-shadow: 3px 3px 10px 1px #2896eabf,
         -3px -3px 10px 1px #2896eabf;
-    margin: 100px auto 0;
+    margin: 0 auto;
     color: rgba(0, 180, 2180, 0.06);
 }
 
@@ -178,6 +183,20 @@ body.dark .bi-sun-fill {
     top: -70px;
 }
 
+.text p {
+    font-size: 20px;
+    color: #6b7280;
+    letter-spacing: 1;
+    margin-bottom: 8px;
+}
+
+.text h1 {
+    font-size: 42px;
+    font-weight: 500;
+    color: #111827;
+    font-family: "SN Pro", sans-serif;
+}
+
 @keyframes top-down-jumbing {
     0% {
         top: 0;
@@ -197,6 +216,14 @@ body.dark .bi-sun-fill {
         font-size: 15px !important;
     }
 
+    .text h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .text h2 {
+        font-size: 25px;
+    }
 
 }
 
@@ -234,5 +261,9 @@ body.dark .bi-sun-fill {
 @media(min-width:992px) {
     .Custom-Border {
         border: none !important;
+    }
+
+    .img-parent {
+        margin-top: 110px;
     }
 }
