@@ -197,10 +197,61 @@ body.dark .text h2 {
 }
 
 .text h1 {
+    display: inline-block;
     font-size: 42px;
     font-weight: 500;
     color: #111827;
     font-family: "SN Pro", sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    width: auto;
+    padding-right: 5px;
+    text-align: center;
+    width: 0;
+    animation: typed 5s infinite;
+    position: relative;
+}
+
+.text h1::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    border-radius: 30px;
+    height: 80%;
+    background-color: #0D6EFD;
+    animation: cursor step-end .2s infinite alternate;
+    margin: 0 auto;
+}
+
+@keyframes cursor {
+    50% {
+        background-color: transparent;
+    }
+}
+
+@keyframes typed {
+    0% {
+        width: 0;
+    }
+
+    25% {
+        width: 19ch;
+    }
+
+    50% {
+        width: 19ch;
+    }
+
+    75% {
+        width: 19ch;
+    }
+
+    100% {
+        width: 0;
+    }
 }
 
 .text h1,
