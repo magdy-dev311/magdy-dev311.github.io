@@ -35,4 +35,10 @@ window.onscroll = () => {
   } else {
     nav.classList.remove("nav-scroll");
   }
+
+  if (this.scrollY >= 160) {
+    document.getElementById("about").style.animation = "up 2s ease forwards";
+  }
+
+  console.log(this.scrollY);
 };
