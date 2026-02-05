@@ -104,9 +104,39 @@ body.dark #about .text p {
     color: #e0e0e0;
 }
 
-/* body.dark #home .text p {
-    
-} */
+body.dark #projects .card {
+    background-color: #090d28;
+    border: 1.5px solid rgba(100, 116, 129, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+body.dark #projects .card:hover {
+    border-color: rgba(96, 165, 250, 0.5);
+    box-shadow: 0 20px 45px rgba(96, 165, 250, 0.25);
+}
+
+body.dark #projects .card h3 {
+    color: #60a5fa;
+}
+
+body.dark #projects .card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #8f92af;
+}
+
+body.dark #projects .card p {
+    color: #d6ddf4 !important;
+}
+
+body.dark #projects .card .date-group {
+    color: #94a3b8;
+}
+
+body.dark #projects .card .tech {
+    background-color: rgba(96, 165, 250, 0.12);
+    color: #93c5fd;
+}
 
 .nav-links-custom {
     font-size: 18px !important;
@@ -252,13 +282,14 @@ body.dark #about .text p {
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    border: 2px solid #0D6EFD;
+    border: none;
+    background-color: #2563eb;
+    box-shadow: 0 10px 25px rgba(37, 100, 235, 0.446);
+    color: #fff;
     outline: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, .15) !important;
-    backdrop-filter: blur(4px) !important;
     position: fixed;
     right: -50px;
     bottom: 30px;
@@ -274,26 +305,16 @@ body.dark #about .text p {
     right: 30px;
 }
 
-#about {
-    max-height: 100vh;
-    /* animation: up 1s ease forwards; */
-    opacity: 0;
-    transform: translateY(50px);
-}
-
-@keyframes up {
-    to {
-        opacity: 1;
-        transform: translateY(0px)
-    }
-}
-
 .custom-heading-section {
     font-size: 40px;
     font-weight: 700;
     color: #111827;
     margin-bottom: -5px;
     transition: 1s;
+}
+
+.custom-heading-section span {
+    text-shadow: 0 10px 25px rgba(37, 100, 235, 0.286);
 }
 
 .icon-heading {
@@ -391,60 +412,6 @@ body.dark #about .text p {
     }
 }
 
-/* From Uiverse.io by mrhyddenn */
-.scrolldown {
-    --color: white;
-    --sizeX: 30px;
-    --sizeY: 50px;
-    position: relative;
-    width: var(--sizeX);
-    height: var(--sizeY);
-    margin-left: var(sizeX / 2);
-    border: calc(var(--sizeX) / 10) solid var(--color);
-    border-radius: 50px;
-    box-sizing: border-box;
-    margin-bottom: 16px;
-    cursor: pointer;
-}
-
-.scrolldown::before {
-    content: "";
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    width: 6px;
-    height: 6px;
-    margin-left: -3px;
-    background-color: var(--color);
-    border-radius: 100%;
-    animation: scrolldown-anim 2s infinite;
-    box-sizing: border-box;
-    box-shadow: 0px -5px 3px 1px #2a547066;
-}
-
-@keyframes scrolldown-anim {
-    0% {
-        opacity: 0;
-        height: 6px;
-    }
-
-    40% {
-        opacity: 1;
-        height: 10px;
-    }
-
-    80% {
-        transform: translate(0, 20px);
-        height: 10px;
-        opacity: 0;
-    }
-
-    100% {
-        height: 3px;
-        opacity: 0;
-    }
-}
-
 .scroll-down-animation {
     position: relative;
     width: 30px;
@@ -480,9 +447,97 @@ body.dark #about .text p {
     }
 }
 
+#projects {
+    min-height: 100vh;
+    margin-top: 90px !important;
+}
+
+#projects .head-text {
+    margin-bottom: 70px !important;
+}
+
+#projects .card {
+    border: 1.9px solid rgba(37, 99, 235, 0.15);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    transition: .35s ease;
+}
+
+#projects .card:hover {
+    box-shadow: 0 20px 45px rgba(37, 99, 235, 0.15);
+}
+
+#projects .card .img-container {
+    position: relative;
+}
+
+#projects .card .img-container img,
+#projects .card .img-container {
+    transition: .3s;
+}
+
+#projects .card .img-container:hover img {
+    transform: scale(1.16);
+}
+
+#projects .card .img-container:hover::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.57));
+}
+
+#projects .card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2563eb;
+    transition: .3s;
+}
+
+#projects .card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    transition: .3s;
+}
+
+#projects .card p {
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: #6b7280 !important;
+    text-align: justify;
+    transition: .3s;
+}
+
+#projects .card .date-group {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 500;
+    transition: .3s;
+}
 
 
+#projects .card .card-body .technologies {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+    transition: .3s;
+}
 
+#projects .card .card-body .tech {
+    background-color: #eff6ff;
+    color: #2563eb;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 90px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+/* #projects .card .card-body a {
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.18);
+} */
 
 
 
@@ -548,6 +603,29 @@ body.dark #about .text p {
 
 
 }
+
+@media (min-width:769px) and (max-width:992px) {
+    .col-md-5 {
+        width: 45%;
+    }
+
+    #projects .card p {
+        height: 160px;
+        margin-bottom: 0;
+    }
+
+    #projects .card .card-body .technologies {
+        height: 71px;
+    }
+}
+
+@media (min-width:993px) and (max-width:1200px) {
+    .col-lg-3 {
+        width: 32% !important;
+    }
+}
+
+
 
 @media(min-width:992px) {
     .Custom-Border {

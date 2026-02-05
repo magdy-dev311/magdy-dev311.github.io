@@ -37,13 +37,12 @@ window.onscroll = () => {
   }
 
   if (this.scrollY >= 160) {
-    document.getElementById("about").style.animation = "up 2s ease forwards";
     document.getElementById("scroll-to-top").classList.add("show");
   } else {
     document.getElementById("scroll-to-top").classList.remove("show");
   }
 
-  console.log(this.scrollY);
+
 };
 
 document.getElementById("scroll-to-top").addEventListener("click", () => {
