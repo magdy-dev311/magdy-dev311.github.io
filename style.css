@@ -453,7 +453,7 @@ body.dark #projects .card .tech {
 }
 
 #projects .head-text {
-    margin-bottom: 70px !important;
+    margin-bottom: 30px !important;
 }
 
 #projects .card {
@@ -534,10 +534,6 @@ body.dark #projects .card .tech {
     font-weight: 500;
     transition: .3s;
 }
-
-/* #projects .card .card-body a {
-    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.18);
-} */
 
 
 
