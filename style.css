@@ -11,6 +11,10 @@ html {
 
 }
 
+a {
+    text-decoration: none;
+}
+
 a,
 button {
     cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="36" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%230D6EFD" stroke-width="2" stroke-linejoin="round" d="M10 11V8.99c0-.88.59-1.64 1.44-1.86h.05A1.99 1.99 0 0 1 14 9.05V12v-2c0-.88.6-1.65 1.46-1.87h.05A1.98 1.98 0 0 1 18 10.06V13v-1.94a2 2 0 0 1 1.51-1.94h0A2 2 0 0 1 22 11.06V14c0 .6-.08 1.27-.21 1.97a7.96 7.96 0 0 1-7.55 6.48 54.98 54.98 0 0 1-4.48 0 7.96 7.96 0 0 1-7.55-6.48C2.08 15.27 2 14.59 2 14v-1.49c0-1.11.9-2.01 2.01-2.01h0a2 2 0 0 1 2.01 2.03l-.01.97v-10c0-1.1.9-2 2-2h0a2 2 0 0 1 2 2V11Z"></path></svg>'), auto !important;
@@ -60,7 +64,6 @@ body.dark i.bi-list {
 body.dark nav {
     background-color: #0F172A !important;
     color: #F6F6F8 !important;
-
     z-index: 10;
 }
 
@@ -174,6 +177,64 @@ body.dark #skills .carous::after {
     background: linear-gradient(to left, rgba(15, 23, 42, 0.95), transparent);
     /* filter: blur(25px); */
 }
+
+body.dark #contact .contact-item {
+    background: #090d28;
+    border: 1.5px solid rgba(96, 165, 250, 0.2);
+    border: 1.5px solid rgba(100, 116, 129, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+body.dark #contact .contact-item h3 {
+    color: #e0e7ff;
+}
+
+body.dark #contact .contact-item p {
+    color: #94a3b8;
+}
+
+body.dark #contact .contact-item i.email {
+    background: linear-gradient(135deg, #2563eb, #4f83ff);
+    color: #fff;
+}
+
+body.dark #contact .contact-item i.phone {
+    background: linear-gradient(135deg, #06b6d4, #0ea5e9);
+    color: #fff;
+}
+
+body.dark #contact .contact-item i.whatsapp {
+    background: linear-gradient(135deg, #25d366, #1ebc5a);
+    color: #fff;
+}
+
+body.dark #contact .contact-item i.linkedin {
+    background: linear-gradient(135deg, #0a66c2, #1e7fe8);
+    color: #fff;
+}
+
+body.dark #contact .contact-item i.github {
+    background: linear-gradient(135deg, #111827, #374151);
+    color: #fff;
+}
+
+body.dark #contact form .form-control {
+    background: #090d28;
+    border: 1.5px solid rgba(96, 165, 250, 0.2);
+    border: 1.5px solid rgba(100, 116, 129, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    color: #e0e7ff;
+}
+
+body.dark #contact form .form-control::placeholder {
+    color: #94a3b8;
+}
+
+body.dark footer {
+    background-color: #0F172A !important;
+    color: #94a3b8;
+}
+
 
 .nav-links-custom {
     font-size: 18px !important;
@@ -650,12 +711,12 @@ body.dark #skills .carous::after {
 
 #skills .carous::before {
     left: 0;
-    background: linear-gradient(to right, rgba(248,250,252,.85), transparent)
+    background: linear-gradient(to right, rgba(248, 250, 252, .85), transparent)
 }
 
 #skills .carous::after {
     right: 0;
-    background: linear-gradient(to left, rgba(248,250,252,.85), transparent)
+    background: linear-gradient(to left, rgba(248, 250, 252, .85), transparent)
 }
 
 #skills .carous .logos-slider {
@@ -701,7 +762,110 @@ body.dark #skills .carous::after {
     max-width: 800px;
 }
 
+#contact {
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
 
+#contact .contact-item {
+    padding: 18px 20px;
+    border-radius: 14px;
+    background: linear-gradient(to bottom, #ffffff, #f8fbff);
+    border: 1.5px solid rgba(37, 99, 255, 0.12);
+    transition: 1s;
+}
+
+#contact .contact-item i {
+    min-width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+#contact .contact-item i.email {
+    background: linear-gradient(135deg, #2563eb, #4da3ff);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+    color: #fff;
+}
+
+#contact .contact-item i.phone {
+    background: linear-gradient(135deg, #ecfeff, #ffffff);
+    box-shadow: 0 12px 30px rgba(6, 182, 212, 0.2);
+    color: #06b6d4;
+}
+
+#contact .contact-item i.whatsapp {
+    background: linear-gradient(135deg, #ecfdf5, #ffffff);
+    box-shadow: 0 12px 30px rgba(37, 211, 102, 0.22);
+    color: #25d366;
+}
+
+#contact .contact-item i.linkedin {
+    background: linear-gradient(135deg, #eef6ff, #ffffff);
+    box-shadow: 0 12px 30px rgba(10, 102, 194, 0.22);
+    color: #0a66c2;
+}
+
+#contact .contact-item i.github {
+    background: linear-gradient(135deg, #f5f5f5, #ffffff);
+    box-shadow: 0 12px 30px rgba(17, 24, 39, 0.22);
+    color: #111827;
+}
+
+#contact .contact-item i:hover {
+    transform: scale(1.08) rotate(-3deg);
+}
+
+
+#contact .contact-item .text h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 2px;
+    transition: 1s;
+}
+
+
+#contact .contact-item .text p {
+    font-size: 15.5px;
+    color: #6b7280;
+    margin-bottom: 0;
+    transition: 1s;
+}
+
+#contact form .form-control {
+    border-radius: 8px;
+    padding: 7px 15px;
+    border: 1px solid #e5e7eb;
+    transition: 0.3s;
+    transition: 1s;
+}
+
+#contact form textarea {
+    resize: none;
+}
+
+#contact form button {
+    background: linear-gradient(45deg, #0d6efd, #2563eb) !important;
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #F8F9FA;
+    color: #0D6EFD;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 17px;
+    transition: 1s;
+    font-weight: 500;
+}
 
 
 /* custom media query */

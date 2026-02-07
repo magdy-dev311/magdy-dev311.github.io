@@ -41,10 +41,24 @@ window.onscroll = () => {
   } else {
     document.getElementById("scroll-to-top").classList.remove("show");
   }
-
-
 };
 
 document.getElementById("scroll-to-top").addEventListener("click", () => {
   window.scrollTo(0, 0);
+});
+
+const form = document.getElementById("form");
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbz4j9Z4BMYH8M9WetIuChHlAgWI8UujNSHmOVfeb165-ijJ6mZS1Gt1hdZ-SruekmP9RA/exec";
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => alert("Thank you! Form is submitted"))
+    .then(() => {
+      window.location.reload();
+    })
+
+    .catch((error) => console.error("Error!", error.message));
 });
