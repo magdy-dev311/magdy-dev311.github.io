@@ -158,6 +158,23 @@ body.dark #education article p {
     color: #d6ddf4 !important;
 }
 
+body.dark #skills .carous .logos-slider .logo {
+    background-color: rgba(96, 165, 250, 0.12);
+    color: #93c5fd;
+}
+
+body.dark #skills .carous::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(11, 15, 62,0.85), transparent);
+    /* filter: blur(25px); */
+}
+
+body.dark #skills .carous::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(11, 15, 62, 0.85), transparent);
+    /* filter: blur(25px); */
+}
+
 .nav-links-custom {
     font-size: 18px !important;
     line-height: 1.25rem !important;
@@ -556,7 +573,6 @@ body.dark #education article p {
 }
 
 #education {
-    min-height: 100vh;
     margin-top: 90px !important;
 }
 
@@ -601,6 +617,82 @@ body.dark #education article p {
     line-height: 2;
     font-weight: 500;
     transition: 1s;
+    color: #4b5563;
+}
+
+#skills {
+    margin-top: 90px !important;
+    height: 100vh;
+}
+
+#skills .carous {
+    overflow: hidden;
+    position: relative;
+}
+
+#skills .slider {
+    padding: 20px 0;
+}
+
+#skills .slider {
+    animation: slide 15s infinite linear;
+}
+
+#skills .carous::before,
+#skills .carous::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 50px;
+    height: 100%;
+    /* filter: blur(10px); */
+    z-index: 3;
+    border-radius: 999px;
+}
+
+#skills .carous::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(248,250,252,.85), transparent)
+}
+
+#skills .carous::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(248,250,252,.85), transparent)
+}
+
+#skills .carous .logos-slider {
+    white-space: nowrap;
+}
+
+#skills .carous .logos-slider .logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    background-color: rgba(224, 242, 255, 0.8);
+    border-radius: 50px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide-2 {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 
