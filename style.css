@@ -221,7 +221,7 @@ body.dark #skills .carous::after {
 #home {
     margin-top: 5rem;
     position: relative;
-    height: 86.2vh;
+    min-height: 86.2vh;
 }
 
 .icon-page-1 {
@@ -622,7 +622,6 @@ body.dark #skills .carous::after {
 
 #skills {
     margin-top: 90px !important;
-    height: 100vh;
 }
 
 #skills .carous {
@@ -693,6 +692,16 @@ body.dark #skills .carous::after {
         transform: translateX(0);
     }
 }
+
+#certificates {
+    margin-top: 90px !important;
+}
+
+#certificates .carousel-div {
+    max-width: 800px;
+}
+
+
 
 
 /* custom media query */
