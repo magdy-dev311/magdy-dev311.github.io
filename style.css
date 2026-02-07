@@ -165,13 +165,13 @@ body.dark #skills .carous .logos-slider .logo {
 
 body.dark #skills .carous::before {
     left: 0;
-    background: linear-gradient(to right, rgba(11, 15, 62,0.85), transparent);
+    background: linear-gradient(to right, rgba(15, 23, 42, 0.95), transparent);
     /* filter: blur(25px); */
 }
 
 body.dark #skills .carous::after {
     right: 0;
-    background: linear-gradient(to left, rgba(11, 15, 62, 0.85), transparent);
+    background: linear-gradient(to left, rgba(15, 23, 42, 0.95), transparent);
     /* filter: blur(25px); */
 }
 
@@ -645,7 +645,6 @@ body.dark #skills .carous::after {
     top: 0;
     width: 50px;
     height: 100%;
-    /* filter: blur(10px); */
     z-index: 3;
     border-radius: 999px;
 }
