@@ -138,6 +138,26 @@ body.dark #projects .card .tech {
     color: #93c5fd;
 }
 
+body.dark #education .con-div-edu {
+    background: #0b1630 !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6) !important;
+}
+
+body.dark #education .con-div-edu h3 {
+    color: #60a5fa !important;
+}
+
+body.dark #education .con-div-edu .edu-date,
+body.dark #education .con-div-edu .edu-div {
+    background: rgba(13, 110, 253, 0.1);
+    color: #4da3ff;
+}
+
+body.dark #education article p {
+    color: #d6ddf4 !important;
+}
+
 .nav-links-custom {
     font-size: 18px !important;
     line-height: 1.25rem !important;
@@ -535,7 +555,53 @@ body.dark #projects .card .tech {
     transition: .3s;
 }
 
+#education {
+    min-height: 100vh;
+    margin-top: 90px !important;
+}
 
+#education .con-div-edu {
+    background: linear-gradient(to bottom, #ffffff, #f8fbff);
+    transition: 1s;
+}
+
+#education .edu-div {
+    width: 45px;
+    height: 45px;
+    border-radius: 15px;
+    font-size: 22px;
+    background-color: #eff6ff;
+    color: #2563eb;
+    transition: 1s;
+}
+
+
+#education .edu-head::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 1.5px;
+    background: linear-gradient(90deg, #0d6efd, #4da3ff);
+    border-radius: 50px;
+}
+
+#education .edu-date {
+    background: #e9f2ff;
+    color: #0d6efd;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 50px;
+    transition: 1s;
+}
+
+#education article p {
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 500;
+    transition: 1s;
+}
 
 
 /* custom media query */
@@ -569,8 +635,32 @@ body.dark #projects .card .tech {
     .icon-heading .right-line {
         width: 110px;
     }
+
+    #education .con-div-edu h3 {
+        font-size: 20px;
+    }
+
+    #education .con-div-edu .edu-date {
+        font-size: 16px;
+    }
+
+    #education article p {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    #education .edu-div {
+        height: 39px;
+        width: 50px;
+        font-size: 16px;
+    }
 }
 
+@media (min-width:576px) and (max-width:768px) {
+    #education .edu-date {
+        width: 140px;
+    }
+}
 
 
 @media (max-width:768px) {
@@ -595,6 +685,10 @@ body.dark #projects .card .tech {
 
     .img-child img {
         top: -50px;
+    }
+
+    #education .con-div-edu h3 {
+        font-size: 22px;
     }
 
 
