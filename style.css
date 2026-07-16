@@ -280,15 +280,14 @@ body.dark footer {
 }
 
 #home {
-    margin-top: 5rem;
     position: relative;
-    min-height: 86.2vh;
+    min-height: 100vh;
 }
 
 .icon-page-1 {
     position: absolute;
     left: 70px;
-    top: 20px;
+    top: 90px;
     font-size: 70px;
     transform: rotate(-30deg);
     color: rgba(13, 109, 253, 0.265);
@@ -928,6 +927,11 @@ footer {
 
 
 @media (max-width:768px) {
+
+    #home {
+        padding-top: 100px;
+    }
+
     .navbar-brand {
         width: 150px;
     }
@@ -939,12 +943,12 @@ footer {
 
     .icon-page-1 {
         left: 25px;
-        top: -10px;
+        top: 80px;
     }
 
     .icon-page-2 {
-        right: 25px;
-        bottom: -20px;
+        right: 30px;
+        bottom: 30px;
     }
 
     .img-child img {
