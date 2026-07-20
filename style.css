@@ -329,10 +329,6 @@ body.dark footer {
     overflow: hidden;
     animation: top-down-jumbing 5s infinite ease-in-out;
     border: 4px solid #F6F6F8;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-mask-image: -webkit-radial-gradient(white, black);
-    will-change: transform;
 }
 
 .img-child img {
