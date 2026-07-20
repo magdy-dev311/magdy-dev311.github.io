@@ -329,6 +329,8 @@ body.dark footer {
     overflow: hidden;
     animation: top-down-jumbing 5s infinite ease-in-out;
     border: 4px solid #F6F6F8;
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .img-child img {
