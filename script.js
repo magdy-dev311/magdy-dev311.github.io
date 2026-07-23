@@ -62,13 +62,3 @@ form.addEventListener("submit", (e) => {
 
     .catch((error) => console.error("Error!", error.message));
 });
-
-window.addEventListener('load', function () {
-  const imgChild = document.querySelector('.img-child');
-  if (imgChild) {
-    imgChild.style.display = 'none';
-    // إجبار reflow
-    void imgChild.offsetHeight;
-    imgChild.style.display = '';
-  }
-});
