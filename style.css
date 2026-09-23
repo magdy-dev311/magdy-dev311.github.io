@@ -803,6 +803,12 @@ body.dark footer {
     color: #25d366;
 }
 
+#contact .contact-item i.facebook {
+    background: linear-gradient(135deg, #eef5ff, #ffffff);
+    box-shadow: 0 12px 30px rgba(24, 119, 242, 0.22);
+    color: #1877f2;
+}
+
 #contact .contact-item i.linkedin {
     background: linear-gradient(135deg, #eef6ff, #ffffff);
     box-shadow: 0 12px 30px rgba(10, 102, 194, 0.22);
