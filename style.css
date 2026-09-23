@@ -601,8 +601,8 @@ body.dark footer {
     font-size: 15.5px;
     line-height: 1.7;
     color: #6b7280 !important;
-    text-align: justify;
     transition: .3s;
+    flex: 1;
 }
 
 #projects .card .date-group {
