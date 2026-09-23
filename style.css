@@ -753,11 +753,11 @@ body.dark footer {
     }
 }
 
-#certificates {
+#certificates, .achievements {
     margin-top: 90px !important;
 }
 
-#certificates .carousel-div {
+#certificates .carousel-div , .achievements .carousel-div {
     max-width: 800px;
 }
 
